@@ -4,7 +4,7 @@ public class Lecture {
     private Module lectureOf;
 
     // Constructor
-    public void Lecture(String lectureName, int weekNumber) {
+    public Lecture(String lectureName, int weekNumber) {
         setLectureName(lectureName);
         setWeekNumber(weekNumber);
     }
