@@ -7,7 +7,7 @@ public class Module {
     private ArrayList<Lecture> lectures = new ArrayList<Lecture>();
 
     // Constructor
-    public void Module(String moduleTitle) {
+    public Module(String moduleTitle) {
         setModuleTitle(moduleTitle);
     }
 
@@ -15,7 +15,7 @@ public class Module {
         String output;
         output = "Module title: " + this.getModuleTitle();
         for (Lecture tempLecture : this.lectures) {
-            output = output + tempLecture.toString();
+            output = output +"\n"+tempLecture.toString();
         }
         return output;
     }
@@ -27,8 +27,8 @@ public class Module {
     }
 
     // Add lecture to the collection of lectures
-    public void addLecture(Lecture lecture) {
-        this.lectures.add(lecture);
+    public void addLecture(Lecture aLecture) {
+        this.lectures.add(aLecture);
     }
 
     // Getters and setters
@@ -39,4 +39,6 @@ public class Module {
     public void setModuleTitle(String moduleTitle) {
         this.moduleTitle = moduleTitle;
     }
+
+
 }
