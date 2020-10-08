@@ -1,9 +1,9 @@
 public class Lecture {
+
     private String lectureName;
     private int weekNumber;
 
-
-    // Constructor
+    // Constructor & call setters
     public Lecture(String lectureName, int weekNumber) {
         setLectureName(lectureName);
         setWeekNumber(weekNumber);
@@ -26,8 +26,4 @@ public class Lecture {
         this.weekNumber = weekNumber;
     }
 
-    // Associate Lecture class and Module class
-//    public void setLectureOf(Module lectureOf) {
-//        this.lectureOf = lectureOf;
-//    }
 }
