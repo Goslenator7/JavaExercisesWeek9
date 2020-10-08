@@ -15,7 +15,7 @@ public class Lecture {
     }
 
     public int getWeekNumber() {
-        return this.getWeekNumber();
+        return this.weekNumber;
     }
 
     public void setLectureName(String lectureName) {
